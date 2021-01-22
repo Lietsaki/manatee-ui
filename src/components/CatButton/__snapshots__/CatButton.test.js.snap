@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders CatButton correctly 1`] = `
+<button
+  className="sc-bdfBwQ dRcJhu"
+  height="39px"
+  onClick={[MockFunction]}
+  onKeyPress={[Function]}
+  width="120px"
+>
+  <svg
+    className="sc-gsTCUz cWpiuZ"
+    style={
+      Object {
+        "bottom": "55%",
+        "right": "15px",
+      }
+    }
+    version="1.1"
+    viewBox="0 0 1080 1080"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlnsXlink="http://www.w3.org/1999/xlink"
+  >
+    <path
+      d="M1053.4,868.4c51.1-98.9-38.9-242.6-156.5-430.3C779,249.7,660.6,60.7,505.8,66.5
+c-141.5,5.2-240,170.4-371.6,391.2C43.6,609.5-1.7,685.4,16.7,751.1C89.3,1009.6,934.5,1098.7,1053.4,868.4z"
+    />
+  </svg>
+  <svg
+    className="sc-gsTCUz cWpiuZ"
+    style={
+      Object {
+        "bottom": "55%",
+        "left": "15px",
+      }
+    }
+    version="1.1"
+    viewBox="0 0 1080 1080"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlnsXlink="http://www.w3.org/1999/xlink"
+  >
+    <path
+      d="M1053.4,868.4c51.1-98.9-38.9-242.6-156.5-430.3C779,249.7,660.6,60.7,505.8,66.5
+c-141.5,5.2-240,170.4-371.6,391.2C43.6,609.5-1.7,685.4,16.7,751.1C89.3,1009.6,934.5,1098.7,1053.4,868.4z"
+    />
+  </svg>
+  <p>
+    Cancel
+  </p>
+</button>
+`;

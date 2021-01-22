@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders UIButton1 correctly 1`] = `
+<button
+  className="sc-bdfBwQ hsQBxA"
+  height="37px"
+  onClick={[MockFunction]}
+  onKeyPress={[Function]}
+  width="120px"
+>
+  <p>
+    Cancel
+  </p>
+</button>
+`;

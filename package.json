@@ -1,0 +1,67 @@
+{
+  "name": "manatee-ui",
+  "description": "React component library with a focus on 'pretty' components.",
+  "version": "0.1.0",
+  "author": "Ricardo Sandez (lietsaki)",
+  "homepage": "https://bit.dev/lietsaki/manatee-ui",
+  "license": "MIT",
+  "dependencies": {
+    "@bit/lietsaki.manatee-ui.manatee-utilities": "^1.0.3",
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.3",
+    "@testing-library/user-event": "^12.6.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-scripts": "4.0.1",
+    "react-test-renderer": "^17.0.1",
+    "styled-components": "^5.2.1",
+    "web-vitals": "^0.2.4"
+  },
+  "peerDependencies": {
+    "react": ">=16.9.0",
+    "react-dom": ">=16.9.0",
+    "styled-components": ">=5.2.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 5 chrome version",
+      "last 5 firefox version",
+      "last 5 safari version"
+    ]
+  },
+  "bit": {
+    "env": {
+      "compiler": "bit.envs/compilers/react@1.0.21",
+      "tester": "bit.envs/testers/jest@22.4.3"
+    },
+    "componentsDefaultDirectory": "components/{name}",
+    "packageManager": "npm"
+  },
+  "keywords": [
+    "react",
+    "component",
+    "library",
+    "cute",
+    "responsive",
+    "customizable",
+    "minimalist",
+    "mobile"
+  ]
+}
