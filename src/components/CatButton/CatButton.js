@@ -100,7 +100,7 @@ const leftEarStyles = {
   bottom: '55%'
 };
 
-const getCatButton = (props) => {
+const GetCatButton = (props) => {
   const {
     onClick,
     bgColor,
@@ -138,7 +138,7 @@ const getCatButton = (props) => {
   );
 };
 
-getCatButton.defaultProps = {
+GetCatButton.defaultProps = {
   rightEarStyles,
   leftEarStyles,
   bgColor: defaultColor,
@@ -149,7 +149,7 @@ getCatButton.defaultProps = {
   height: '39px'
 };
 
-getCatButton.propTypes = {
+GetCatButton.propTypes = {
   onClick: func,
   bgColor: object,
   textColor: string,
@@ -161,4 +161,4 @@ getCatButton.propTypes = {
   rightEarStyles: object
 };
 
-export default getCatButton;
+export default GetCatButton;

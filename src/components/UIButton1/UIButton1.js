@@ -52,7 +52,7 @@ const UIButton1 = styled.button`
   }
 `;
 
-const getUIButton1 = (props) => {
+const GetUIButton1 = (props) => {
   const { onClick, bgColor, textColor, width, height, beforeGradient1, beforeGradient2 } = props;
 
   // Trigger event by pressing the enter key.
@@ -78,7 +78,7 @@ const getUIButton1 = (props) => {
   );
 };
 
-getUIButton1.defaultProps = {
+GetUIButton1.defaultProps = {
   bgColor: defaultColor,
   beforeGradient1: defaultGradientColor1,
   beforeGradient2: defaultGradientColor2,
@@ -87,7 +87,7 @@ getUIButton1.defaultProps = {
   height: '37px'
 };
 
-getUIButton1.propTypes = {
+GetUIButton1.propTypes = {
   onClick: func,
   bgColor: object,
   textColor: string,
@@ -97,4 +97,4 @@ getUIButton1.propTypes = {
   beforeGradient2: string
 };
 
-export default getUIButton1;
+export default GetUIButton1;
