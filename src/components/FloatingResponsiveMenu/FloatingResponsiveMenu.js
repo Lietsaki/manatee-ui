@@ -10,7 +10,8 @@ const Menu = styled.div.attrs((props) => ({
   contractedHeight: props.contractedHeight || '380px',
   mainColor: props.mainColor || '#333333',
   hoverColor: props.hoverColor || '#0071e3',
-  boxShadowColor: props.boxShadowColor || 'rgba(66, 151, 236, 0.2)',
+  itemBgHover: props.itemBgHover || 'rgba(66, 151, 236, 0.2)',
+  menuBoxShadowColor: props.menuBoxShadowColor || 'rgba(30, 30, 30, 0.7)',
   fontFamily: props.fontFamily || 'sans-serif',
   notifBgColor: props.notifBgColor || '#F02849',
   notifTextColor: props.notifTextColor || '#ffffff'
@@ -26,7 +27,7 @@ const Menu = styled.div.attrs((props) => ({
     justify-items: center;
     width: ${(props) => props.contractedWidth};
     height: ${(props) => props.contractedHeight};
-    box-shadow: 7px 5px 35px -22px rgba(30, 30, 30, 0.7);
+    box-shadow: 7px 5px 35px -22px ${(props) => props.menuBoxShadowColor};
     border-radius: 30px;
     flex-direction: column;
     justify-content: space-evenly;
@@ -124,7 +125,7 @@ const Menu = styled.div.attrs((props) => ({
     // Styles to apply when the items are hovered
     &:hover {
       cursor: pointer;
-      background-color: ${(props) => props.boxShadowColor};
+      background-color: ${(props) => props.itemBgHover};
 
       svg {
         fill: ${(props) => props.hoverColor};
@@ -153,7 +154,7 @@ const Menu = styled.div.attrs((props) => ({
 
     // Use box shadow to create an outline that is rounded and blends with the bg color when focused
     &:focus {
-      box-shadow: 0px 0px 0px 2px ${(props) => props.boxShadowColor};
+      box-shadow: 0px 0px 0px 2px ${(props) => props.itemBgHover};
     }
   }
 
@@ -267,7 +268,8 @@ const GetMenu = (props) => {
     contractedHeight,
     mainColor,
     hoverColor,
-    boxShadowColor,
+    menuBoxShadowColor,
+    itemBgHover,
     fontFamily,
     notifBgColor,
     notifTextColor,
@@ -337,8 +339,9 @@ const GetMenu = (props) => {
         contractedWidth={contractedWidth}
         contractedHeight={contractedHeight}
         mainColor={mainColor}
+        menuBoxShadowColor={menuBoxShadowColor}
         hoverColor={hoverColor}
-        boxShadowColor={boxShadowColor}
+        itemBgHover={itemBgHover}
         fontFamily={fontFamily}
         notifBgColor={notifBgColor}
         notifTextColor={notifTextColor}
